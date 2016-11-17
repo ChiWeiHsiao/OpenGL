@@ -1,2 +1,5 @@
 *.exe
 *.opensdf
+*.log
+*.tlog
+dll/

@@ -49,7 +49,7 @@ void mesh::LoadMesh(string obj_file)
 		return;
 	}
 
-	cout<<endl<<obj_file<<endl;
+	//cout<<endl<<obj_file<<endl;
 		
 	while(!feof(scene))
 	{
@@ -161,7 +161,7 @@ void mesh::LoadMesh(string obj_file)
 	nTotal = nList.size();
 	tTotal = tList.size();
 	fTotal = faceList.size();
-	printf("vetex: %d, normal: %d, texture: %d, triangles: %d\n",vTotal, nTotal, tTotal, fTotal);
+	//printf("vetex: %d, normal: %d, texture: %d, triangles: %d\n",vTotal, nTotal, tTotal, fTotal);
 }
 
 void mesh::LoadMtl(string tex_file)
@@ -177,7 +177,7 @@ void mesh::LoadMtl(string tex_file)
 		return;
 	}
 
-	cout<<tex_file<<endl;
+	//cout<<tex_file<<endl;
 
 	size_t cur_mat;
 
@@ -264,7 +264,7 @@ void mesh::LoadMtl(string tex_file)
 //		printf("[%s]\n",token);
 	}
 
-	printf("total material:%d\n",matMap.size());
+	//printf("total material:%d\n",matMap.size());
 
 	if (fp_mtl) fclose(fp_mtl);
 }
